@@ -1906,7 +1906,7 @@ void update_quiet_histories(
 Move Skill::pick_best(const RootMoves& rootMoves, size_t multiPV) {
     static PRNG rng(now());  // PRNG sequence should be non-deterministic
 
-    // RootMoves are already sorted by score in descending order
+    // RootMoves are already sorted by score in ascending order (worst first)
     Value  topScore = rootMoves[0].score;
     int    delta    = std::min(topScore - rootMoves[multiPV - 1].score, int(PawnValue));
     int    maxScore = -VALUE_INFINITE;
