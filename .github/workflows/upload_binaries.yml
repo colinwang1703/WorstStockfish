@@ -94,9 +94,9 @@ jobs:
 
       - name: Official Release?
         id: official_release
-        # Check for "Official release version of Stockfish" in the commit message
+        # Check for "Official release version of badfish" in the commit message
         run: |
-          if git log -1 --pretty=%B | grep -q "Official release version of Stockfish"; then
+          if git log -1 --pretty=%B | grep -q "Official release version of badfish"; then
             echo "OFFICIAL_RELEASE=true" >> $GITHUB_ENV
           else
             echo "OFFICIAL_RELEASE=false" >> $GITHUB_ENV
