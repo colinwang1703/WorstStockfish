@@ -33,7 +33,7 @@
 #include "misc.h"
 #include "position.h"
 
-namespace Stockfish {
+namespace badfish {
 
 constexpr int PAWN_HISTORY_BASE_SIZE   = 8192;  // has to be a power of 2
 constexpr int UINT_16_HISTORY_SIZE     = std::numeric_limits<uint16_t>::max() + 1;
@@ -268,6 +268,6 @@ struct SharedHistories {
     size_t sizeMinus1, pawnHistSizeMinus1;
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef HISTORY_H_INCLUDED

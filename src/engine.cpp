@@ -44,7 +44,7 @@
 #include "uci.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace badfish {
 
 namespace NN = Eval::NNUE;
 
@@ -115,8 +115,8 @@ Engine::Engine(std::optional<std::string> path) :
     options.add("UCI_LimitStrength", Option(false));
 
     options.add("UCI_Elo",
-                Option(Stockfish::Search::Skill::LowestElo, Stockfish::Search::Skill::LowestElo,
-                       Stockfish::Search::Skill::HighestElo));
+                Option(badfish::Search::Skill::LowestElo, badfish::Search::Skill::LowestElo,
+                       badfish::Search::Skill::HighestElo));
 
     options.add("UCI_ShowWDL", Option(false));
 

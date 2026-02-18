@@ -31,14 +31,14 @@
 
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 namespace Bitboards {
 
 void        init();
 std::string pretty(Bitboard b);
 
-}  // namespace Stockfish::Bitboards
+}  // namespace badfish::Bitboards
 
 constexpr Bitboard FileABB = 0x0101010101010101ULL;
 constexpr Bitboard FileBBB = FileABB << 1;
@@ -463,6 +463,6 @@ inline Bitboard attacks_bb(Piece pc, Square s, Bitboard occupied) {
     return attacks_bb(type_of(pc), s, occupied);
 }
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef BITBOARD_H_INCLUDED

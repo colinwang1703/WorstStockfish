@@ -31,11 +31,11 @@
 #include "nnue_architecture.h"
 #include "nnue_common.h"
 
-namespace Stockfish {
+namespace badfish {
 class Position;
 }
 
-namespace Stockfish::Eval::NNUE {
+namespace badfish::Eval::NNUE {
 
 template<IndexType Size>
 struct alignas(CacheLineSize) Accumulator;
@@ -201,6 +201,6 @@ class AccumulatorStack {
     std::size_t                                             size = 1;
 };
 
-}  // namespace Stockfish::Eval::NNUE
+}  // namespace badfish::Eval::NNUE
 
 #endif  // NNUE_ACCUMULATOR_H_INCLUDED

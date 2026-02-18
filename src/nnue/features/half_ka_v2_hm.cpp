@@ -25,7 +25,7 @@
 #include "../../types.h"
 #include "../nnue_common.h"
 
-namespace Stockfish::Eval::NNUE::Features {
+namespace badfish::Eval::NNUE::Features {
 
 // Index of a feature for a given king position and another piece on some square
 
@@ -66,4 +66,4 @@ bool HalfKAv2_hm::requires_refresh(const DiffType& diff, Color perspective) {
     return diff.pc == make_piece(perspective, KING);
 }
 
-}  // namespace Stockfish::Eval::NNUE::Features
+}  // namespace badfish::Eval::NNUE::Features

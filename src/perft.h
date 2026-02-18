@@ -26,7 +26,7 @@
 #include "types.h"
 #include "uci.h"
 
-namespace Stockfish::Benchmark {
+namespace badfish::Benchmark {
 
 // Utility to verify move generation. All the leaf nodes up
 // to the given depth are generated and counted, and the sum is returned.

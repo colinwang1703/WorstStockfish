@@ -32,7 +32,7 @@
     #include <pthread.h>
     #include <functional>
 
-namespace Stockfish {
+namespace badfish {
 
 class NativeThread {
     pthread_t thread;
@@ -63,15 +63,15 @@ class NativeThread {
     void join() { pthread_join(thread, nullptr); }
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #else  // Default case: use STL classes
 
-namespace Stockfish {
+namespace badfish {
 
 using NativeThread = std::thread;
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif
 

@@ -35,12 +35,12 @@
 #include "numa.h"
 #include "position.h"
 #include "search.h"
-#include "syzygy/tbprobe.h"  // for Stockfish::Depth
+#include "syzygy/tbprobe.h"  // for badfish::Depth
 #include "thread.h"
 #include "tt.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class Engine {
    public:
@@ -128,7 +128,7 @@ class Engine {
     std::map<NumaIndex, SharedHistories>  sharedHists;
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 
 #endif  // #ifndef ENGINE_H_INCLUDED

@@ -23,7 +23,7 @@
 
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class Position;
 
@@ -53,6 +53,6 @@ Value evaluate(const NNUE::Networks&          networks,
                int                            optimism);
 }  // namespace Eval
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef EVALUATE_H_INCLUDED

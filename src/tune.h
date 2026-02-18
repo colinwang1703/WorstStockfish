@@ -26,7 +26,7 @@
 #include <utility>
 #include <vector>
 
-namespace Stockfish {
+namespace badfish {
 
 class OptionsMap;
 
@@ -187,6 +187,6 @@ constexpr void tune_check_args(Args&&...) {
 
 #define UPDATE_ON_LAST() bool UNIQUE(p, __LINE__) = Tune::update_on_last = true
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef TUNE_H_INCLUDED

@@ -26,7 +26,7 @@
 #include "memory.h"
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class ThreadPool;
 struct TTEntry;
@@ -105,6 +105,6 @@ class TranspositionTable {
     uint8_t generation8 = 0;  // Size must be not bigger than TTEntry::genBound8
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef TT_H_INCLUDED

@@ -69,7 +69,7 @@ struct EmbeddedNNUE {
     const unsigned int   size;
 };
 
-using namespace Stockfish::Eval::NNUE;
+using namespace badfish::Eval::NNUE;
 
 EmbeddedNNUE get_embedded(EmbeddedNNUEType type) {
     if (type == EmbeddedNNUEType::BIG)
@@ -81,7 +81,7 @@ EmbeddedNNUE get_embedded(EmbeddedNNUEType type) {
 }
 
 
-namespace Stockfish::Eval::NNUE {
+namespace badfish::Eval::NNUE {
 
 
 namespace Detail {
@@ -413,4 +413,4 @@ template class Network<NetworkArchitecture<TransformedFeatureDimensionsBig, L2Bi
 template class Network<NetworkArchitecture<TransformedFeatureDimensionsSmall, L2Small, L3Small>,
                        FeatureTransformer<TransformedFeatureDimensionsSmall>>;
 
-}  // namespace Stockfish::Eval::NNUE
+}  // namespace badfish::Eval::NNUE

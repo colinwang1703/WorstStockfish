@@ -28,7 +28,7 @@
 #include "misc.h"
 #include "search.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class Position;
 class Move;
@@ -75,6 +75,6 @@ class UCIEngine {
     void init_search_update_listeners();
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef UCI_H_INCLUDED

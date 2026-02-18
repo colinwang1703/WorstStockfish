@@ -27,7 +27,7 @@
 #include "../types.h"
 #include "nnue_architecture.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class Position;
 
@@ -57,16 +57,16 @@ struct AccumulatorCaches;
 
 std::string trace(Position& pos, const Networks& networks, AccumulatorCaches& caches);
 
-}  // namespace Stockfish::Eval::NNUE
-}  // namespace Stockfish
+}  // namespace badfish::Eval::NNUE
+}  // namespace badfish
 
 template<>
-struct std::hash<Stockfish::Eval::NNUE::EvalFile> {
-    std::size_t operator()(const Stockfish::Eval::NNUE::EvalFile& evalFile) const noexcept {
+struct std::hash<badfish::Eval::NNUE::EvalFile> {
+    std::size_t operator()(const badfish::Eval::NNUE::EvalFile& evalFile) const noexcept {
         std::size_t h = 0;
-        Stockfish::hash_combine(h, evalFile.defaultName);
-        Stockfish::hash_combine(h, evalFile.current);
-        Stockfish::hash_combine(h, evalFile.netDescription);
+        badfish::hash_combine(h, evalFile.defaultName);
+        badfish::hash_combine(h, evalFile.current);
+        badfish::hash_combine(h, evalFile.netDescription);
         return h;
     }
 };

@@ -23,7 +23,7 @@
 #include "movegen.h"
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class Position;
 
@@ -75,6 +75,6 @@ class MovePicker {
     ExtMove                      moves[MAX_MOVES];
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef MOVEPICK_H_INCLUDED

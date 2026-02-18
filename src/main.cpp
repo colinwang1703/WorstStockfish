@@ -25,7 +25,7 @@
 #include "tune.h"
 #include "uci.h"
 
-using namespace Stockfish;
+using namespace badfish;
 
 int main(int argc, char* argv[]) {
     std::cout << engine_info() << std::endl;

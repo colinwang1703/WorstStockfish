@@ -23,7 +23,7 @@
 
 #include "misc.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class OptionsMap;
 enum Color : uint8_t;
@@ -62,6 +62,6 @@ class TimeManagement {
     bool         useNodesTime   = false;  // True if we are in 'nodes as time' mode
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef TIMEMAN_H_INCLUDED

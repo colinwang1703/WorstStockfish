@@ -26,7 +26,7 @@
 #include "search.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace badfish {
 
 TimePoint TimeManagement::optimum() const { return optimumTime; }
 TimePoint TimeManagement::maximum() const { return maximumTime; }
@@ -137,4 +137,4 @@ void TimeManagement::init(Search::LimitsType& limits,
         optimumTime += optimumTime / 4;
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

@@ -35,7 +35,7 @@
 #include "uci.h"
 #include "nnue/nnue_accumulator.h"
 
-namespace Stockfish {
+namespace badfish {
 
 // Returns a static, purely materialistic evaluation of the position from
 // the point of view of the side to move. It can be divided by PawnValue to get
@@ -121,4 +121,4 @@ std::string Eval::trace(Position& pos, const Eval::NNUE::Networks& networks) {
     return ss.str();
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

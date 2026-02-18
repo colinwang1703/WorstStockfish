@@ -44,7 +44,7 @@
 #define stringify2(x) #x
 #define stringify(x) stringify2(x)
 
-namespace Stockfish {
+namespace badfish {
 
 std::string engine_version_info();
 std::string engine_info(bool to_uci = false);
@@ -526,12 +526,12 @@ void move_to_front(std::vector<T>& vec, Predicate pred) {
     #define sf_unreachable()
 #endif
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 template<std::size_t N>
-struct std::hash<Stockfish::FixedString<N>> {
-    std::size_t operator()(const Stockfish::FixedString<N>& fstr) const noexcept {
-        return Stockfish::hash_bytes(fstr.data(), fstr.size());
+struct std::hash<badfish::FixedString<N>> {
+    std::size_t operator()(const badfish::FixedString<N>& fstr) const noexcept {
+        return badfish::hash_bytes(fstr.data(), fstr.size());
     }
 };
 

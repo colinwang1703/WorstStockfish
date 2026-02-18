@@ -34,7 +34,7 @@
 #include "search.h"
 #include "thread_win32_osx.h"
 
-namespace Stockfish {
+namespace badfish {
 
 
 class OptionsMap;
@@ -176,6 +176,6 @@ class ThreadPool {
     }
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef THREAD_H_INCLUDED
