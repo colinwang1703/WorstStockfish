@@ -38,12 +38,6 @@ jobs:
         run: |
           mkdir badfish
 
-      - name: Download wiki
-        run: |
-          git clone https://github.com/official-stockfish/Stockfish.wiki.git wiki
-          rm -rf wiki/.git
-          mv wiki badfish/
-
       - name: Copy files
         run: |
           mv "${{ matrix.config.simple_name }} ${{ matrix.binaries }}" badfish-workflow
