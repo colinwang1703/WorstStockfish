@@ -46,7 +46,7 @@
     #include <arm_neon.h>
 #endif
 
-namespace Stockfish::Eval::NNUE {
+namespace badfish::Eval::NNUE {
 
 using BiasType         = std::int16_t;
 using ThreatWeightType = std::int8_t;
@@ -288,6 +288,6 @@ inline void write_leb_128(std::ostream& stream, const std::array<IntType, Count>
     flush();
 }
 
-}  // namespace Stockfish::Eval::NNUE
+}  // namespace badfish::Eval::NNUE
 
 #endif  // #ifndef NNUE_COMMON_H_INCLUDED

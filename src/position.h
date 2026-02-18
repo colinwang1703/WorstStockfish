@@ -30,7 +30,7 @@
 #include "bitboard.h"
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class TranspositionTable;
 struct SharedHistories;
@@ -409,6 +409,6 @@ inline void Position::do_move(Move m, StateInfo& newSt, const TranspositionTable
 
 inline StateInfo* Position::state() const { return st; }
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef POSITION_H_INCLUDED

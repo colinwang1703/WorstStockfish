@@ -50,14 +50,14 @@
 #include "uci.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace badfish {
 
 namespace TB = Tablebases;
 
 void syzygy_extend_pv(const OptionsMap&            options,
                       const Search::LimitsType&    limits,
-                      Stockfish::Position&         pos,
-                      Stockfish::Search::RootMove& rootMove,
+                      badfish::Position&         pos,
+                      badfish::Search::RootMove& rootMove,
                       Value&                       v);
 
 using namespace Search;
@@ -2201,4 +2201,4 @@ bool RootMove::extract_ponder_from_tt(const TranspositionTable& tt, Position& po
 }
 
 
-}  // namespace Stockfish
+}  // namespace badfish

@@ -30,7 +30,7 @@
     #include <immintrin.h>
 #endif
 
-namespace Stockfish {
+namespace badfish {
 
 namespace {
 
@@ -309,4 +309,4 @@ Move* generate<LEGAL>(const Position& pos, Move* moveList) {
     return moveList;
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

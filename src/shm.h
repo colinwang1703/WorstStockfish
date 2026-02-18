@@ -89,7 +89,7 @@
 #endif
 
 
-namespace Stockfish {
+namespace badfish {
 
 // argv[0] CANNOT be used because we need to identify the executable.
 // argv[0] contains the command used to invoke it, which does not involve the full path.
@@ -629,6 +629,6 @@ struct SystemWideSharedConstant {
 };
 
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef SHM_H_INCLUDED

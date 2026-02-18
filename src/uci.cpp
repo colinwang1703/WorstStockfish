@@ -39,7 +39,7 @@
 #include "types.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace badfish {
 
 constexpr auto BenchmarkCommand = "speedtest";
 
@@ -658,4 +658,4 @@ void UCIEngine::on_bestmove(std::string_view bestmove, std::string_view ponder) 
     std::cout << sync_endl;
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

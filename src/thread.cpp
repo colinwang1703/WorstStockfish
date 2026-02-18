@@ -38,7 +38,7 @@
 #include "uci.h"
 #include "ucioption.h"
 
-namespace Stockfish {
+namespace badfish {
 
 // Constructor launches the thread and waits until it goes to sleep
 // in idle_loop(). Note that 'searching' and 'exit' should be already set.
@@ -453,4 +453,4 @@ void ThreadPool::ensure_network_replicated() {
         th->ensure_network_replicated();
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

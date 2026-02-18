@@ -43,7 +43,7 @@
 #include "timeman.h"
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 // Different node types, used as a template parameter
 enum NodeType {
@@ -241,7 +241,7 @@ class SearchManager: public ISearchManager {
             const TranspositionTable& tt,
             Depth                     depth);
 
-    Stockfish::TimeManagement tm;
+    badfish::TimeManagement tm;
     double                    originalTimeAdjust;
     int                       callsCnt;
     std::atomic_bool          ponder;
@@ -362,7 +362,7 @@ class Worker {
     Eval::NNUE::AccumulatorStack  accumulatorStack;
     Eval::NNUE::AccumulatorCaches refreshTable;
 
-    friend class Stockfish::ThreadPool;
+    friend class badfish::ThreadPool;
     friend class SearchManager;
 };
 
@@ -374,6 +374,6 @@ struct ConthistBonus {
 
 }  // namespace Search
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef SEARCH_H_INCLUDED

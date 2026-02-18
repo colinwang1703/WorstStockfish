@@ -23,7 +23,7 @@
 #include <string>
 #include <vector>
 
-namespace Stockfish::Benchmark {
+namespace badfish::Benchmark {
 
 std::vector<std::string> setup_bench(const std::string&, std::istream&);
 
@@ -37,6 +37,6 @@ struct BenchmarkSetup {
 
 BenchmarkSetup setup_benchmark(std::istream&);
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef BENCHMARK_H_INCLUDED

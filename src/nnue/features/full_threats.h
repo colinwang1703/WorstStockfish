@@ -24,11 +24,11 @@
 #include "../../types.h"
 #include "../nnue_common.h"
 
-namespace Stockfish {
+namespace badfish {
 class Position;
 }
 
-namespace Stockfish::Eval::NNUE::Features {
+namespace badfish::Eval::NNUE::Features {
 
 static constexpr int numValidTargets[PIECE_NB] = {0, 6, 10, 8, 8, 10, 0, 0,
                                                   0, 6, 10, 8, 8, 10, 0, 0};
@@ -101,6 +101,6 @@ class FullThreats {
     static bool requires_refresh(const DiffType& diff, Color perspective);
 };
 
-}  // namespace Stockfish::Eval::NNUE::Features
+}  // namespace badfish::Eval::NNUE::Features
 
 #endif  // #ifndef NNUE_FEATURES_FULL_THREATS_INCLUDED

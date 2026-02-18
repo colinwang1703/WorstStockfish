@@ -32,7 +32,7 @@
 #include "../../types.h"
 #include "../nnue_common.h"
 
-namespace Stockfish::Eval::NNUE::Features {
+namespace badfish::Eval::NNUE::Features {
 
 struct HelperOffsets {
     int cumulativePieceOffset, cumulativeOffset;
@@ -340,4 +340,4 @@ bool FullThreats::requires_refresh(const DiffType& diff, Color perspective) {
     return perspective == diff.us && (int8_t(diff.ksq) & 0b100) != (int8_t(diff.prevKsq) & 0b100);
 }
 
-}  // namespace Stockfish::Eval::NNUE::Features
+}  // namespace badfish::Eval::NNUE::Features

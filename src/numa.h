@@ -75,7 +75,7 @@ using GetThreadSelectedCpuSetMasks_t = BOOL (*)(HANDLE, PGROUP_AFFINITY, USHORT,
 
 #include "misc.h"
 
-namespace Stockfish {
+namespace badfish {
 
 using CpuIndex  = size_t;
 using NumaIndex = size_t;
@@ -1712,7 +1712,7 @@ inline const NumaConfig& NumaReplicatedBase::get_numa_config() const {
     return context->get_numa_config();
 }
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 
 #endif  // #ifndef NUMA_H_INCLUDED

@@ -36,7 +36,7 @@
 #include "network.h"
 #include "nnue_accumulator.h"
 
-namespace Stockfish::Eval::NNUE {
+namespace badfish::Eval::NNUE {
 
 
 constexpr std::string_view PieceToChar(" PNBRQK  pnbrqk");
@@ -190,4 +190,4 @@ trace(Position& pos, const Eval::NNUE::Networks& networks, Eval::NNUE::Accumulat
 }
 
 
-}  // namespace Stockfish::Eval::NNUE
+}  // namespace badfish::Eval::NNUE

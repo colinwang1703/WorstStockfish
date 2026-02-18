@@ -24,7 +24,7 @@
 #include <vector>
 
 
-namespace Stockfish {
+namespace badfish {
 class Position;
 class OptionsMap;
 
@@ -36,7 +36,7 @@ using RootMoves = std::vector<RootMove>;
 }
 }
 
-namespace Stockfish::Tablebases {
+namespace badfish::Tablebases {
 
 struct Config {
     int   cardinality = 0;
@@ -80,6 +80,6 @@ Config   rank_root_moves(
     bool                         rankDTZ    = false,
     const std::function<bool()>& time_abort = []() { return false; });
 
-}  // namespace Stockfish::Tablebases
+}  // namespace badfish::Tablebases
 
 #endif

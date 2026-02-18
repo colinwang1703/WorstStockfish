@@ -29,7 +29,7 @@
 #include "syzygy/tbprobe.h"
 #include "thread.h"
 
-namespace Stockfish {
+namespace badfish {
 
 
 // TTEntry struct is the 10 bytes transposition table entry, defined as below:
@@ -248,4 +248,4 @@ TTEntry* TranspositionTable::first_entry(const Key key) const {
     return &table[mul_hi64(key, clusterCount)].entry[0];
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

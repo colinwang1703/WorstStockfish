@@ -49,7 +49,7 @@
 
 #include "misc.h"
 
-namespace Stockfish::shm {
+namespace badfish::shm {
 
 namespace detail {
 
@@ -667,6 +667,6 @@ template<typename T>
     return std::nullopt;
 }
 
-}  // namespace Stockfish::shm
+}  // namespace badfish::shm
 
 #endif  // #ifndef SHM_LINUX_H_INCLUDED

@@ -33,7 +33,7 @@
 #include "layers/sqr_clipped_relu.h"
 #include "nnue_common.h"
 
-namespace Stockfish::Eval::NNUE {
+namespace badfish::Eval::NNUE {
 
 // Input features used in evaluation function
 using ThreatFeatureSet = Features::FullThreats;
@@ -152,12 +152,12 @@ struct NetworkArchitecture {
     }
 };
 
-}  // namespace Stockfish::Eval::NNUE
+}  // namespace badfish::Eval::NNUE
 
-template<Stockfish::Eval::NNUE::IndexType L1, int L2, int L3>
-struct std::hash<Stockfish::Eval::NNUE::NetworkArchitecture<L1, L2, L3>> {
+template<badfish::Eval::NNUE::IndexType L1, int L2, int L3>
+struct std::hash<badfish::Eval::NNUE::NetworkArchitecture<L1, L2, L3>> {
     std::size_t
-    operator()(const Stockfish::Eval::NNUE::NetworkArchitecture<L1, L2, L3>& arch) const noexcept {
+    operator()(const badfish::Eval::NNUE::NetworkArchitecture<L1, L2, L3>& arch) const noexcept {
         return arch.get_content_hash();
     }
 };

@@ -24,7 +24,7 @@
 
 #include "types.h"
 
-namespace Stockfish {
+namespace badfish {
 
 class Position;
 
@@ -68,6 +68,6 @@ struct MoveList {
     Move moveList[MAX_MOVES], *last;
 };
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef MOVEGEN_H_INCLUDED

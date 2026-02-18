@@ -26,7 +26,7 @@
 #include "misc.h"
 #include "position.h"
 
-namespace Stockfish {
+namespace badfish {
 
 namespace {
 
@@ -310,4 +310,4 @@ top:
 
 void MovePicker::skip_quiet_moves() { skipQuiets = true; }
 
-}  // namespace Stockfish
+}  // namespace badfish

@@ -57,11 +57,11 @@
     #include <windows.h>
 #endif
 
-using namespace Stockfish::Tablebases;
+using namespace badfish::Tablebases;
 
-int Stockfish::Tablebases::MaxCardinality;
+int badfish::Tablebases::MaxCardinality;
 
-namespace Stockfish {
+namespace badfish {
 
 namespace {
 
@@ -1773,4 +1773,4 @@ Config Tablebases::rank_root_moves(const OptionsMap&            options,
 
     return config;
 }
-}  // namespace Stockfish
+}  // namespace badfish

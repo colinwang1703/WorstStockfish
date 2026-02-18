@@ -59,7 +59,7 @@ using AdjustTokenPrivileges_t =
 #endif
 
 
-namespace Stockfish {
+namespace badfish {
 
 void* std_aligned_alloc(size_t alignment, size_t size);
 void  std_aligned_free(void* ptr);
@@ -328,6 +328,6 @@ T load_as(const ByteT* buffer) {
     return value;
 }
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 #endif  // #ifndef MEMORY_H_INCLUDED

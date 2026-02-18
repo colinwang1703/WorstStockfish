@@ -41,7 +41,7 @@
 
 using std::string;
 
-namespace Stockfish {
+namespace badfish {
 
 namespace Zobrist {
 
@@ -1547,4 +1547,4 @@ bool Position::pos_is_ok() const {
     return true;
 }
 
-}  // namespace Stockfish
+}  // namespace badfish

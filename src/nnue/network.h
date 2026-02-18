@@ -37,11 +37,11 @@
 #include "nnue_feature_transformer.h"
 #include "nnue_misc.h"
 
-namespace Stockfish {
+namespace badfish {
 class Position;
 }
 
-namespace Stockfish::Eval::NNUE {
+namespace badfish::Eval::NNUE {
 
 enum class EmbeddedNNUEType {
     BIG,
@@ -138,22 +138,22 @@ struct Networks {
 };
 
 
-}  // namespace Stockfish
+}  // namespace badfish
 
 template<typename ArchT, typename FeatureTransformerT>
-struct std::hash<Stockfish::Eval::NNUE::Network<ArchT, FeatureTransformerT>> {
+struct std::hash<badfish::Eval::NNUE::Network<ArchT, FeatureTransformerT>> {
     std::size_t operator()(
-      const Stockfish::Eval::NNUE::Network<ArchT, FeatureTransformerT>& network) const noexcept {
+      const badfish::Eval::NNUE::Network<ArchT, FeatureTransformerT>& network) const noexcept {
         return network.get_content_hash();
     }
 };
 
 template<>
-struct std::hash<Stockfish::Eval::NNUE::Networks> {
-    std::size_t operator()(const Stockfish::Eval::NNUE::Networks& networks) const noexcept {
+struct std::hash<badfish::Eval::NNUE::Networks> {
+    std::size_t operator()(const badfish::Eval::NNUE::Networks& networks) const noexcept {
         std::size_t h = 0;
-        Stockfish::hash_combine(h, networks.big);
-        Stockfish::hash_combine(h, networks.small);
+        badfish::hash_combine(h, networks.big);
+        badfish::hash_combine(h, networks.small);
         return h;
     }
 };
