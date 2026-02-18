@@ -88,9 +88,9 @@ struct RootMove {
         pv(1, m) {}
     bool extract_ponder_from_tt(const TranspositionTable& tt, Position& pos);
     bool operator==(const Move& m) const { return pv[0] == m; }
-    // Sort in descending order
+    // Sort in ascending order (worst moves first)
     bool operator<(const RootMove& m) const {
-        return m.score != score ? m.score < score : m.previousScore < previousScore;
+        return m.score != score ? score < m.score : previousScore < m.previousScore;
     }
 
     uint64_t          effort           = 0;
